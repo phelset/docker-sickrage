@@ -15,6 +15,7 @@ It's recommended to provide three mount points writeable by user `797` (or group
 Example:
 ```
 $ mkdir ~/sickrage-config
+$ chown 797:797 ~/sickrage-config
 $ docker run -d --name=sickrage -v ~/plex-config:/config -v ~/Movies:/tv -v ~/Downloads:/downloads -p 8081:8081 phelset/sickrage
 ```
 
